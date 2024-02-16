@@ -18,15 +18,20 @@
       }
 
       .name {
-        padding-top: 16px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        color: white;
       }
     </style>
   </head>
   <body>
     <div class="box">
-      <canvas id="pinkboard"></canvas>
+      <canvas id="heart-section"></canvas>
+      <h1 class="name">Phát Nguyễn 💕 Mai Khanh</h1>
     </div>
-    <h1 class="name">Phát Nguyễn ❤ Mai Khanh</h1>
     <script>
       var settings = {
         particles: {
@@ -297,7 +302,7 @@
           onResize();
           render();
         }, 10);
-      })(document.getElementById("pinkboard"));
+      })(document.getElementById("heart-section"));
     </script>
   </body>
 </html>
