@@ -22,7 +22,9 @@ var loaded = false;
 var init = function () {
     if (loaded) return;
     loaded = true;
-    var mobile = window.isDevice;
+    // fixed desktop mode to have the same experience
+    // var mobile = window.isDevice;
+    var mobile = false;
     var koef = mobile ? 0.5 : 1;
     var canvas = document.getElementById('heart');
     var ctx = canvas.getContext('2d');
