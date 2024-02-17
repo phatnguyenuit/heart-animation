@@ -85,7 +85,7 @@ var init = function () {
 
     var config = {
         traceK: 0.4,
-        timeDelta: 0.1
+        timeDelta: 0.01
     };
 
     var time = 0;
